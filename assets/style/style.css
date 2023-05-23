@@ -1,0 +1,49 @@
+ header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+ }
+
+nav{
+    background-color: #ffffff !important;
+}
+ .fa-basket-shopping{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top: -15px;
+    right:-5px;
+    font-size: 10px;
+    padding: 4px;
+    color: #fff;
+    background-color: #d9135a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.aroms{
+    height: 100vh;
+    width: 100%;
+    background-image:url(https://cdn.shopify.com/s/files/1/0618/3518/2257/files/banner.png?v=1665999384) ;
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 991px) {
+    .authzer{
+        position: absolute !important;
+        top: 30px;
+        left: 150px;
+        /* display: block !important; */
+
+    }
+    .card-item{
+        display: none;
+    }
+  }
