@@ -2,6 +2,7 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 100;
  }
 
 nav{
@@ -34,16 +35,61 @@ nav{
     background-size: cover;
     background-position: center;
 }
+.hero-menu{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between !important;
+    gap: 40px;
+}
+.hero-img {
+    position: relative;
+    top: -10px;
+    width: 190px;
+    height: 172px;
+
+}
+.hero-img> img{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.active-hero{
+    color: black !important;
+    font-weight: 400 !important;
+    font-size: 20px;
+    background-color: #ffffff !important;
+    cursor: unset;
+}
 
 @media screen and (max-width: 991px) {
+  
     .authzer{
         position: absolute !important;
         top: 30px;
         left: 150px;
-        /* display: block !important; */
+       
 
     }
     .card-item{
+        display: none;
+    }
+    .hero-menu{
+      width: 100%;
+        gap: 10px !important;
+      
+        flex-direction: column;
+        justify-content: flex-start !important;
+        border: #ffffff;
+    }
+    .hero-img{
+        display: none;
+    }
+ 
+  }
+  @media screen and (max-width: 1120px) {
+    .hero-img{
         display: none;
     }
   }
