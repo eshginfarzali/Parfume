@@ -3,11 +3,10 @@
     position: sticky;
     top: 0;
     z-index: 100;
- }
-
-nav{
     background-color: #ffffff !important;
 }
+
+   
  .fa-basket-shopping{
     position: relative;
 }
@@ -35,17 +34,28 @@ nav{
     background-size: cover;
     background-position: center;
 }
-.hero-menu{
+header i{
+    font-size: 20px;
+}
+.dropdown-menu{
+    
+    padding-top: 32px;
     position: relative;
-    width: 100%;
+    top: 180px;
+    border: none;
     background-color: #ffffff;
+}
+.hero-menu{
+    width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-between !important;
-    gap: 40px;
+    gap: 10px;
 }
 .hero-img {
     position: relative;
     top: -10px;
+    left: 30px;
     width: 190px;
     height: 172px;
 
@@ -62,6 +72,158 @@ nav{
     background-color: #ffffff !important;
     cursor: unset;
 }
+
+
+.text-carousel{
+    padding-top: 40px;
+    color: #ffffff;
+   
+    height: 70vh;
+
+}
+.carousel-item-just{
+   padding-top: 40px;
+}
+
+.welcome{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.fall-love{
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.amazing-arom{
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.lorem-text{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+
+.btn-carus{
+ 
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 80% !important;
+    -webkit-border-radius: 80% !important;
+    -moz-border-radius: 80% !important;
+    -ms-border-radius: 80% !important;
+    -o-border-radius: 80% !important;
+}
+
+.best-pro-text{
+    color: #015E6b;
+    font-size: 32px;
+}
+.bestseller{
+    position: relative;
+    top: -180px;
+    width: 90%;
+    height: 80vh;
+    background-color:#ffffff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.fragrances{
+    border-bottom:2px solid black ;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+  }
+
+  .corusel-main{
+    display: flex;
+    flex-direction: row;
+   
+    padding: 10px;
+    /* gap: 1px; */
+    
+  }
+  .caruosel-photo{
+    position: relative;
+    border: 1px solid rgb(132, 132, 132);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  .caruosel-photo-parent ,.caruosel-photo-child {
+    padding: 30px;
+  }
+  .caruosel-photo-child{
+    position: absolute;
+    left: 1000px;
+    animation-duration:750ms;
+  }
+ 
+  .fa-heart{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+
+  }
+
+
+.caruosel-photo-parent:hover .caruosel-photo-child{
+  top: 0px;
+  left: 0px;
+  animation-name: bounce;
+  animation-timing-function: ease;
+
+}
+.caruosel-photo-child:hover{
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+
+@keyframes bounce {
+    0%{opacity: 0;}
+    20%{opacity: 0.2;}
+    4%{opacity: 0.4;}
+  50% { opacity: 0.5;}
+  70% { opacity: 0.7;}
+  80% { opacity: 0.8;}
+  100% { opacity: 1; }
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 991px) {
   
@@ -83,13 +245,25 @@ nav{
         justify-content: flex-start !important;
         border: #ffffff;
     }
-    .hero-img{
-        display: none;
-    }
+    
  
-  }
-  @media screen and (max-width: 1120px) {
     .hero-img{
         display: none;
     }
+
+    .bestseller{
+        margin-top: 20px;
+        width: 100%;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+}
+    .corusel-main{
+        
+        gap: 10px;
+        
+      }
   }
+  
