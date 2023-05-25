@@ -271,13 +271,6 @@ header i{
   }
 
 
-
-
-
-
-
-
-
 @keyframes bounce {
     0%{opacity: 0;}
     20%{opacity: 0.2;}
@@ -287,10 +280,6 @@ header i{
   80% { opacity: 0.8;}
   100% { opacity: 1; }
 }
-
-/* .love-aroms-right{
-    width: 30%;
-} */
 
 .love-aroms-right img{
  width: 100%;
@@ -319,18 +308,43 @@ header i{
     height: 60vh;
     background-image: url(https://cdn.shopify.com/s/files/1/0618/3518/2257/files/banner-2.png?v=1666078399);
     background-repeat: no-repeat;
-    /* object-fit: cover; */
+
     background-size: cover;
     background-position: center;
 }
 
+.fill-amazing-carus{
+    margin-top: 250px;
+}
 
 
 
+.footer{
+    display: flex;
+    justify-content: center;
+  
+}
+.footer-input{
 
+    position: relative;
+}
+.footer-input> input{
+    padding: 15px 60px  !important;
+    border: 1px solid #d9135a ;
+}
 
-
-
+.fa-arrow{
+    position: absolute;
+    top: 2px;
+    left: 230px;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #d9135a;
+   
+}
 
 
 
